@@ -19,7 +19,8 @@ Once done, check if version is >=0.6.1
 
     dfu-programmer --version
 
-### Restet & flash the so-called 16u2-chip
+### Restet & flash the so-called 16u2-chip connecting these two pins :
+![the two pins to be connected for 1s. or so](http://arduino.cc/en/uploads/Hacking/Uno-front-DFU-reset.png "the two pins to be connected for 1s. or so")
 #### Reset
 Connect these two pins together, . As told 
 
