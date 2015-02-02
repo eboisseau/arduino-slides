@@ -1,10 +1,10 @@
 # How to create an Arduino-based wireless presenter
 
-## Global Goal
+  ## Global Goal
 
 My goal is to develop a wireless presenter with different Arduino moduls I have.
 
-### System working principle
+    ### System working principle
 foo
 
 ## Making your Arduino HID
