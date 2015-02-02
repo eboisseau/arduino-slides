@@ -15,7 +15,7 @@ install it with:
 
     sudo apt-get install dfu-programmer
 
-Once done, check if version is >=0.6.1
+Once done, check if version is >=0.6.1 (otherwise, the `dfu-programmer` doesn't handle the 16u2 / 8u2 chip : you need then to patch the software before installing it - STW in this case)
 
     dfu-programmer --version
 
