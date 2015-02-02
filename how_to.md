@@ -19,7 +19,12 @@ Once done, check if version is >=0.6.1
 
     dfu-programmer --version
 
+### Restet & flash the so-called 16u2-chip
+#### Reset
+Connect these two pins together, . As told 
 
+
+I downloaded the file `Arduino-COMBINED-dfu-usbserial-atmega16u2-Uno-Rev3.hex` from [this repo](https://github.com/energia/Energia/tree/master/hardware/arduino/firmwares)
 
 
 
