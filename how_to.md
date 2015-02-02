@@ -12,10 +12,12 @@ As I have an Arduino Uno, and I want it to act as my keyboard/mouse would, I wan
 
 ### Install dfu-programmer
 install it with:
+
     sudo apt-get install dfu-programmer
 
 Once done, check if version is >=0.6.1
-   dfu-programmer --version
+
+    dfu-programmer --version
 
 
 
