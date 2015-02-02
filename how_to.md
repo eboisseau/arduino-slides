@@ -20,10 +20,11 @@ Once done, check if version is >=0.6.1
     dfu-programmer --version
 
 ### Restet & flash the so-called 16u2-chip connecting these two pins :
-![the two pins to be connected for 1s. or so](http://arduino.cc/en/uploads/Hacking/Uno-front-DFU-reset.png "the two pins to be connected for 1s. or so")
-#### Reset
-Connect these two pins together, . As told 
 
+#### Reset
+Connect these two pins together the two following pins together. Like anything else, do it at your own risks (-;
+(**N.B.** in case you have an 8u2 chip, you need a 10kOhm resistor, as presented in [this thread](http://arduino.cc/en/Hacking/DFUProgramming8U2).
+![the two pins to be connected for 1s. or so](http://arduino.cc/en/uploads/Hacking/Uno-front-DFU-reset.png "the two pins to be connected for 1s. or so")
 
 I downloaded the file `Arduino-usbserial-atmega16u2-Uno-Rev3.hex` from [this repo](https://roboticsclub.org/redmine/projects/quadrotor/repository/revisions/58d82c77908eee0e1c222f7b38691e6532deb77b/entry/arduino-1.0/hardware/arduino/firmwares/arduino-usbserial/Arduino-usbserial-atmega16u2-Uno-Rev3.hex) as recommanded in post #25 of [this thread](http://forum.arduino.cc/index.php?topic=106580.2).
 
