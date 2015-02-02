@@ -24,7 +24,7 @@ Once done, check if version is >=0.6.1
 Connect these two pins together, . As told 
 
 
-I downloaded the file `Arduino-COMBINED-dfu-usbserial-atmega16u2-Uno-Rev3.hex` from [this repo](https://github.com/energia/Energia/tree/master/hardware/arduino/firmwares)
+I downloaded the file `Arduino-usbserial-atmega16u2-Uno-Rev3.hex` from [this repo](https://roboticsclub.org/redmine/projects/quadrotor/repository/revisions/58d82c77908eee0e1c222f7b38691e6532deb77b/entry/arduino-1.0/hardware/arduino/firmwares/arduino-usbserial/Arduino-usbserial-atmega16u2-Uno-Rev3.hex) as recommanded in post #25 of [this thread](http://forum.arduino.cc/index.php?topic=106580.2).
 
 
 
