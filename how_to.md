@@ -79,3 +79,5 @@ Here are listed all the websites I read through :
 [Instructables : Turn your Arduino Uno into an USB-HID-Mididevice](http://www.instructables.com/id/Turn-your-Arduino-Uno-into-an-USB-HID-Mididevice/)
 
 [Arduino USB HID Keyboard](http://mitchtech.net/arduino-usb-hid-keyboard/)
+
+[HoodLoader2](https://github.com/NicoHood/HoodLoader2)
