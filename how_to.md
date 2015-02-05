@@ -16,9 +16,9 @@ My goal is to develop a wireless presenter with different Arduino moduls I have.
 ## Making your Arduino HID
 We'll begin... with **step 4**.
 
-The easiest way your computer get `Willy`'s instructions is that `Willy` act as your keyboard/mouse would do. 
+The easiest way your computer get `Willy`'s instructions is that `Willy` act as your keyboard/mouse would do. It means we want `Willy` belongs the [USB HID class](http://en.wikipedia.org/wiki/USB_human_interface_device_class).
 
-As I have an Arduino Uno, and I want it to act as my keyboard/mouse would, I want it to be considered as an [USB-HID](http://en.wikipedia.org/wiki/USB_human_interface_device_class). But the actual software implemented on the chip doesn't enamble it [1](http://wiki.sgmk-ssam.ch/index.php?title=Arduino_Uno_R3_as_HID). So we need to flash the original soft. Therefor, we will follow [http://wiki.sgmk-ssam.ch](http://wiki.sgmk-ssam.ch/index.php?title=Arduino_Uno_R3_as_HID) tutorial :
+I have an Arduino Uno, and I want it to be considered as an [USB-HID](http://en.wikipedia.org/wiki/USB_human_interface_device_class). But the actual software implemented on the chip doesn't enamble it [1](http://wiki.sgmk-ssam.ch/index.php?title=Arduino_Uno_R3_as_HID). So we need to flash the original soft. Therefor, we will follow [http://wiki.sgmk-ssam.ch](http://wiki.sgmk-ssam.ch/index.php?title=Arduino_Uno_R3_as_HID) tutorial :
 
 ### Install dfu-programmer
 install it with:
