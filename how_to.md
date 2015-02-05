@@ -5,9 +5,19 @@
 My goal is to develop a wireless presenter with different Arduino moduls I have.
 
 ### System working principle
-foo
+ The principle our system is pretty simple:
+ 1. You tell an Arduino (we'll call it `Bob`) what you want to do with your presentation (e.g. go to next or previous slide ; blank the screen ; etc.) - it's done through push buttons so far.
+ 2. `Bob` understand what you've said, and thus send a wireless message to another Arduino (we'll call it `Willy`)
+ 3. `Willy` get `Bob`'s message, transform it as an information that is understandable by your computer
+ 4. Your computer get `Willy`'s info and do what you want it to do.
+
+For technical reasons, `Bob` will communicate with `Willy` via _XBees_ RF-shields (actually, we'll use an _XBee_ chip, that you plug on a shield, that you plug on your Arduinos). Other possibilities you have have been listed [here](https://www.sparkfun.com/pages/wireless_guide) (you can also get a comparative assessment of wireless technologies on _slide 2_ of [this presentation about XBees](http://home.iitb.ac.in/~rahul./ITSP/wireless_comm.pdf)
 
 ## Making your Arduino HID
+We'll begin... with *step 4*.
+
+The easiest way your computer get `Willy`'s instructions is that `Willy` act as your keyboard/mouse would do. 
+
 As I have an Arduino Uno, and I want it to act as my keyboard/mouse would, I want it to be considered as an [USB-HID](http://en.wikipedia.org/wiki/USB_human_interface_device_class). But the actual software implemented on the chip doesn't enamble it [1](http://wiki.sgmk-ssam.ch/index.php?title=Arduino_Uno_R3_as_HID). So we need to flash the original soft. Therefor, we will follow [http://wiki.sgmk-ssam.ch](http://wiki.sgmk-ssam.ch/index.php?title=Arduino_Uno_R3_as_HID) tutorial :
 
 ### Install dfu-programmer
