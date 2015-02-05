@@ -45,14 +45,33 @@ I downloaded the file `Arduino-usbserial-atmega16u2-Uno-Rev3.hex` from [this rep
 First, move into the directory where the `*.hex` is. Then check if the programmer sees the 16U2: 
 
     sudo dfu-programmer atmega16u2 dump
-    
-You should get kind of a thousand of question marks. If it's the case, then go :
+
+You should get kind of a thousand of question marks. (If you get womething like `dfu-programmer: no device present`, try again to reset the chip by connecting the two connectors (see previous part with the picture).) If it's the case, then go :
 
     sudo dfu-programmer atmega16u2 erase
     sudo dfu-programmer atmega16u2 flash --suppress-bootloader-mem TheFileYouveJustDownloaded.hex
     sudo dfu-programmer atmega16u2 reset
 
-You should then be able to verse new scripts again on your Arduino
+You should then be able to verse new scripts again on your Arduino.
+
+> **Note :** In case something goes wrong in the next steps (e.g. with uploadind a "pimped" `.hex` script), you can always repeat previous steps in order to go back into intial configuration.
+
+
+#### Get the HID-enabling `.hex` file
+Now that you know how to flash your Arduino, and did it with the original `.hex` file, we'll get into the fun part... and hack this file.
+
+Luckily, others did the job before us, and are offering us the script. So you have to download the `.hex` file available [on this website](http://hunt.net.nz/users/darran/weblog/b3029/Arduino_UNO_Keyboard_HID_version_03.html)
+
+Once done, upload this file on `Willy`:
+
+    sudo dfu-programmer atmega16u2 dump
+    sudo dfu-programmer atmega16u2 erase
+    sudo dfu-programmer atmega16u2 flash --debug 1 Arduino-usbserial.hex
+    sudo dfu-programmer atmega16u2 reset
+
+(I followed the steps listed [here](http://hunt.net.nz/users/darran/weblog/faf5e/Arduino_UNO_Keyboard_HID_part_2.html), i.e. the steps written by whom created the pimped `.hex` file)
+
+
 
 # references
 Here are listed all the websites I read through :
