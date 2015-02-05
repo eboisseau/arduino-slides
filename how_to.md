@@ -11,10 +11,10 @@ My goal is to develop a wireless presenter with different Arduino moduls I have.
  3. `Willy` get `Bob`'s message, transform it as an information that is understandable by your computer
  4. Your computer get `Willy`'s info and do what you want it to do.
 
-For technical reasons, `Bob` will communicate with `Willy` via _XBees_ RF-shields (actually, we'll use an _XBee_ chip, that you plug on a shield, that you plug on your Arduinos). Other possibilities you have have been listed [here](https://www.sparkfun.com/pages/wireless_guide) (you can also get a comparative assessment of wireless technologies on _slide 2_ of [this presentation about XBees](http://home.iitb.ac.in/~rahul./ITSP/wireless_comm.pdf)
+>For technical reasons, `Bob` will communicate with `Willy` via **_XBees_ RF-shields** (actually, we'll use an _XBee_ chip, that you plug on a shield, that you plug on your Arduinos). Other possibilities you have have been listed [here](https://www.sparkfun.com/pages/wireless_guide) (you can also get a comparative assessment of wireless technologies on _slide 2_ of [this presentation about XBees](http://home.iitb.ac.in/~rahul./ITSP/wireless_comm.pdf)
 
 ## Making your Arduino HID
-We'll begin... with *step 4*.
+We'll begin... with **step 4**.
 
 The easiest way your computer get `Willy`'s instructions is that `Willy` act as your keyboard/mouse would do. 
 
